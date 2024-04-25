@@ -1,0 +1,15 @@
+netstat -an | grep LISTEN    /слушается ли порт
+
+docker-compose up -d         /запуск и стоп докера
+docker-compose stop 
+
+source website/bin/activate  / вирт окружение
+
+python3 manage.py runserver  / запуск сайта
+
+
+
+
+
+pip install pip-tools 
+pip-sync / requirements.txt докинет библиотеки

@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #081b29;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 6px; /* Высота линии */
+    margin-top: 100px; /* Просто для примера отступа сверху */
+  }
+  
+  .container span {
+    width: 32px;
+    height: 20px;
+    background: #2c4766;
+    border-radius: 8px;
+    margin-right: 4px; /* Отступ между элементами */
+    animation: animateBlink 2s linear infinite;
+    animation-delay: calc(var(--i) * 2s / 9);
+  }
+  
+  @keyframes animateBlink {
+    0% {
+        background: #0ef;
+    }
+    25% {
+        background: #2c4766;
+    }
+  }
+  
+
+.error {
+    position: absolute;
+    width: 400px;
+    /* background: red; */
+}
+
+h2 {
+    font-size: 2em;
+    color: #0ef;
+    text-align: center;
+}
