@@ -13,6 +13,7 @@ from concurrent.futures import ThreadPoolExecutor
 
 
 async def load_json(url):
+    """Загрузка Json"""
     async with aiohttp.ClientSession() as session:
         
         async with session.get(url) as response:

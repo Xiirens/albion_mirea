@@ -7,7 +7,7 @@ import sys
 
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
-sys.path.insert(0, os.path.abspath('../webalb'))
+
 django_settings = 'Sphinx.settings'
 
 project = 'doc'
@@ -17,7 +17,7 @@ release = '2024'
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
-
+sys.path.insert(0, os.path.abspath('../'))
 extensions = [
     'sphinx.ext.autodoc',  # авто документации из docstrings
     'sphinx.ext.viewcode',  # ссылки на исходный код
@@ -40,3 +40,5 @@ html_static_path = ['_static']  # папка со статическими фа�
 todo_include_todos = True  # показывать TODO в готовой документации
 
 autodoc_mock_imports = ["тяжеловесные_модули"]  # модули для мокирования
+autodoc_member_order = 'bysource'
+autodoc_default_flags = ['members', 'private-members', 'special-members']

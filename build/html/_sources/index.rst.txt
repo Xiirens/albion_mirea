@@ -3,7 +3,7 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to doc's documentation!
+Документация AlbionSite
 ===============================
 
 .. toctree::
@@ -12,25 +12,17 @@ Welcome to doc's documentation!
 
 
 
-Indices and tables
+Поиск
 ==================
 
 * :ref:`genindex`
 * :ref:`modindex`
 * :ref:`search`
 
-Views
-=====
+Функции
+=======
 
-.. automodule:: test_app.views
+.. automodule:: req2
    :members:
    :undoc-members:
-
-Документация myproject
-======================
-
-.. toctree::
-   :maxdepth: 2
-   :caption: Пример документации views
-
-   ./views.rst
+   :show-inheritance:
